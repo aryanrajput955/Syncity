@@ -7,10 +7,16 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
 
 export const metadata = {
-  title: "Elegant Events Uttarakhand - Destination Weddings & Corporate Events",
+  title: "Syncity - Destination Weddings & Corporate Events",
   description:
     "Premium event management services in Uttarakhand. Specializing in destination weddings, corporate events, and farm tourism experiences.",
+      icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
+
 
 export default function RootLayout({ children }) {
   return (
