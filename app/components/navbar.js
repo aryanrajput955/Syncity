@@ -99,7 +99,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center">
         <Link href="/">
         <Image
-          src="/logo.jpg"
+          src="/logo2.png"
           alt=" uEvents Logo"
           width={180}
           height={80}
