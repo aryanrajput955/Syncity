@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { ChevronDown, Star, MapPin, Calendar, Users, Award, Gift } from 'lucide-react';
-
+import Image from 'next/image';
 function Card({ className = "", children, ...props }) {
   return (
     <div
@@ -528,16 +528,13 @@ export default function Services() {
             </div>
 
             <div className={`relative transition-all duration-1000 delay-300 ${isVisible['return-gift-services'] ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="relative overflow-hidden shadow-2xl group">
-                <div className="aspect-[4/5] bg-gradient-to-br from-[#7A5E6B]/20 to-[#D4A5B2]/20 flex items-center justify-center">
-                  <div className="text-center text-[#7A5E6B]/60">
-                    <div className="text-6xl mb-4">🎁</div>
-                    <p className="text-lg font-medium">Return Gift Hamper</p>
-                    <p className="text-sm opacity-75">Curated with Care</p>
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#7A5E6B]/30 via-transparent to-transparent group-hover:from-[#7A5E6B]/50 transition-all duration-500"></div>
-              </div>
+        <Image
+                src="/hamper.png"
+                alt="Return Gift Hampers"
+                width={400}
+                height={500}
+                className="w-full h-auto object-cover shadow-2xl"
+              />
             </div>
           </div>
         </div>
